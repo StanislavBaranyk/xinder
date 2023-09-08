@@ -1,5 +1,7 @@
 @media screen and (max-width: 991px) {
-
+  .video-section-btn {
+    display: none;
+  }
 
   .container {
     padding: 0;
@@ -83,6 +85,7 @@
     max-width: none;
     width: 100%;
   }
+
 
   .best-solutions .container .section-content {
     align-items: start;

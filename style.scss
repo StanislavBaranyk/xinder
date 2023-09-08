@@ -508,12 +508,13 @@ p {
 
 ////////////////////////////////////////////////////////////////////////////
 .video-section {
-  position: relative;
 
 
   .container {
     @include flexCol;
     gap: 32px;
+    position: relative;
+
 
 
     .video-section-btn {
@@ -523,7 +524,6 @@ p {
       width: 100%;
       left: 0;
       top: calc(50% - 24px);
-      padding: 0 10px;
 
       button {
         background: white;
