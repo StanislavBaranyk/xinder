@@ -175,10 +175,22 @@ p {
   height: 354px;
 }
 
+.latest-masterpieces .container .tns-outer .tns-controls {
+  justify-content: right;
+  top: calc(50% - 24px);
+}
+.latest-masterpieces .container .tns-outer .tns-controls button:first-child {
+  display: none;
+}
+.latest-masterpieces .container .tns-outer .tns-controls button:last-child {
+  margin-right: 20px;
+}
+
 .latest-masterpieces {
   background: #F1F5F9;
 }
 .latest-masterpieces .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -201,6 +213,7 @@ p {
   font-size: 16px;
   background: white;
   font-weight: 500;
+  background: #F1F5F9;
 }
 .latest-masterpieces .container .latest-masterpieces-slider .latest-masterpieces-slider-col .latest-masterpieces-slider-content {
   border-radius: 10px;
@@ -407,13 +420,18 @@ p {
   letter-spacing: 0.5px;
 }
 
-.video-section .container {
+.video-section .container .tns-outer .tns-controls {
+  width: calc(100% + 48px);
+  justify-content: space-between;
+  left: -2%;
+}
+.video-section .container .video-picture-slide-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
   position: relative;
 }
-.video-section .container .video-section-btn {
+.video-section .container .video-picture-slide-content .video-section-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -422,7 +440,7 @@ p {
   left: 0;
   top: calc(50% - 24px);
 }
-.video-section .container .video-section-btn button {
+.video-section .container .video-picture-slide-content .video-section-btn button {
   background: white;
   border-radius: 50px;
   padding: 12px;
@@ -432,27 +450,27 @@ p {
   justify-content: center;
   align-items: center;
 }
-.video-section .container .section-content {
+.video-section .container .video-picture-slide-content .section-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 570px;
   width: 100%;
 }
-.video-section .container .section-content h3 {
+.video-section .container .video-picture-slide-content .section-content h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 180%;
   color: #475569;
   margin: 0;
 }
-.video-section .container .section-content h3 span {
+.video-section .container .video-picture-slide-content .section-content h3 span {
   font-size: 20px;
   font-weight: 400;
   line-height: 180%;
   color: #2563EB;
 }
-.video-section .container .section-content p {
+.video-section .container .video-picture-slide-content .section-content p {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -779,6 +797,7 @@ footer .container .footer-bottom p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .header .container .left {
   display: flex;
@@ -820,6 +839,8 @@ footer .container .footer-bottom p {
   -webkit-transition: right 400ms ease;
   transition: right 400ms ease;
   padding-top: 100px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .small-nav-container .container {
   display: flex;
@@ -902,6 +923,10 @@ footer .container .footer-bottom p {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tns-outer {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

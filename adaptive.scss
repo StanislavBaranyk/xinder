@@ -1,7 +1,5 @@
-@media screen and (max-width: 991px) {
-  .video-section-btn {
-    display: none;
-  }
+@media screen and (max-width: 992px) {
+
 
   .container {
     padding: 0;
@@ -36,9 +34,11 @@
     gap: 80px;
   }
 
-  .video-section .container {
+  .video-section .container .video-picture-slide-content  {
     flex-direction: row;
     align-items: center;
+
+
   }
 
   .incredible-section .container .section-header {
@@ -80,6 +80,44 @@
   }
 }
 
+
+@media screen  and (max-width: 768px){
+
+  .video-section {
+
+    .container {
+
+      .tns-outer {
+
+        .tns-ovh {
+
+          .tns-inner {
+
+
+            .video-picture-slide {
+
+
+              .video-picture-slide-col {
+
+                .video-picture-slide-content {
+
+                  .video-picture {
+
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
 @media screen and (min-width: 992px) {
   h1, h2, h3, h4, h5, h6 {
     max-width: none;
@@ -104,6 +142,7 @@
   .welcome-section .container {
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 
 }
@@ -115,6 +154,20 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+  .welcome-section {
+    .container {
+      gap: 80px;
+
+      .item {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 
 
   .best-solutions .container .section-content {
@@ -173,7 +226,7 @@
     }
   }
 
-  .video-section .container .section-content p {
+  .video-section .container .video-picture-slide-content .section-content p {
     font-size: 24px;
   }
 
@@ -217,6 +270,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  footer .container .section-text .section-text-col ul {
+    align-items: start;
+  }
+
+  footer .container .section-text .section-text-col ul h4 {
+    justify-content: start;
   }
 
   .best-solutions .container .section-content .section-header h2 {
@@ -263,7 +324,9 @@
 
 @media screen and (min-width: 1400px ) {
 
-
+  .promo .container .section-header h2 {
+    font-size: 56px;
+  }
 
   .container {
     max-width: 1320px;
@@ -286,11 +349,21 @@
 
 
   .video-section .container {
-    gap: 80px;
+
+    .video-picture-slide-content {
+
+      gap: 80px;
+    }
 
     .item {
       width: auto;
     }
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .header {
+    padding: 24px 80px;
   }
 }
 
